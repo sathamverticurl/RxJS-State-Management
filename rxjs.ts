@@ -10,13 +10,13 @@ export default class RxJSListener {
    * Method to publish the data
    * @param eventdata
    */
-  publish(eventdata) {
+  subscribe(eventdata) {
     this.multicasting.next(eventdata);
   }
   /**
    * Method to unpublish the data
    */
-  unpublish() {
+  unsubscribe() {
     this.multicasting.unsubscribe();
   }
 }
